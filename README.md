@@ -15,6 +15,6 @@ If this repository contributed to your work please consider citing the associate
   issn = {2949-8910},
   doi = {https://doi.org/10.1016/j.geoen.2024.212688},
   url = {https://www.sciencedirect.com/science/article/abs/pii/S2949891024000587},
-  author = {Yildirim Kocoglu and Sheldon B. Gorell and Hossein Emadi and Dorcas S. Eyinla and Farshad Bolouri and Yavuz C. Kocoglu and Aman Arora}
+  author = {Yildirim Kocoglu and Sheldon B. Gorell and Hossein Emadi and Dorcas S. Eyinla and Farshad Bolouri and Yavuz C. Kocoglu and Aman Arora}    
 }
 '''
