@@ -6,6 +6,7 @@ Deep Learning Models for Forecasting Multiphase Production Time Series Data
 If this repository contributed to your work please consider citing the associated paper
 
 '''
+##    
 @article{KOCOGLU2024212688,
   title = {Improving the accuracy of short-term multiphase production forecasts in unconventional tight oil reservoirs using contextual Bi-directional long short-term memory},
   journal = {Geoenergy Science and Engineering},
