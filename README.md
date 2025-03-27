@@ -56,8 +56,8 @@ The contents of the scripts provided in this repository can be modified to achie
     - If additional features (e.g., pressure information) existed (it did not exist in our case), it is possbile to train a more accurate model.
     - Unfortunately, during my research, I found limited resources on creating more accurate forecasting models and none of them were useful in creating accurate multiphase production time series forecasts for oil & gas. It is highly recommended to use the domain knowledge (feature engineering) to build more accurate models for your own problem (if it is different than this problem).
 - Capability to create models for long term forecasts.
-    - Although this is an example of short term forecasts, it can be used as a base for creating models capable of accurate long term forecasting.
-    - Accurate long term forecasting requires models capable of predicting long term dependencies (shameless self promotion here - but, a useful read to understand long term dependencies: https://library.seg.org/doi/abs/10.15530/urtec-2022-3721904).
+    - Although this is an example of short term forecasts, it can be used as a base for creating models capable of accurate long term forecasts.
+    - Accurate long term forecasts require models capable of accurately predicting long term dependencies (shameless self promotion here - but, a useful read to understand long term dependencies: https://library.seg.org/doi/abs/10.15530/urtec-2022-3721904).
     - Many RNNs, including gated RNNs can forget previous inputs during processing/training if the sequence is too long which may negatively impact model training (suboptimal training).
     - The gated version exist to help remember longer sequences (better than not having this option), however there are no guarantees that the model will remember the whole sequence especially if the sequence is long enough.  
 - Saving/ Loading the Tensorflow models.
