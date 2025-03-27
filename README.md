@@ -8,12 +8,14 @@ The contents of the scripts provided in this repository can be modified to achie
 - **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environments.ymla"** was necessary for successfully running this script without running into any errors/issues. Using different versions of these libraries may lead to errors when running this script.
 
 - The provided scripts were tested with **Tensorflow 2.10 (Windows 11)**.
-    - This is the latest Tensorflow version that supports training tensorflow models & predicting with the trained models on GPU in Windows.
+    - Tensorflow 2.10 is the latest version that supports training tensorflow models on a GPU instead of a CPU in Windows.
+    - For variations of RNNs (LSTM, Bi-LSTM, etc.), if a GPU is available, it is highly recommended to use a GPU to train the models, as the CPU alternative may take much longer to train.
+    - For additional speed during model training, I also recommend creating tensor datasets (as implemented in this project).
 - This environment was created & managed inside **Anaconda** but, you can create virtual python environments or find other ways to recreate the same environment (**at your own risk**).  
 - Before creating the environment, you may want to check your GPU type & download the matching  python, compiler, & CUDA versions.
     - https://www.tensorflow.org/install/source_windows (**For Windows Builds**)
 ![image](https://github.com/user-attachments/assets/70eedab5-bdee-4ba8-a7a5-8b3e73441a2c)
-- You can use the provided the documents to rebuild the same (working) environment:
+- You can use the provided the documents to rebuild the same (**working**) environment:
     - **"environments.ymla"**
     - **"Environment_Build.txt"** 
 
@@ -22,32 +24,42 @@ The contents of the scripts provided in this repository can be modified to achie
 
 ##
 **Data Pre-processing for Time Series based Forecasting (RNN variations):**
-- Many-to-Many (fully available)
-- Many-to-One (available as an example at the end of the script)
-- One-to-Many (available but, requires slight modification to the script - change window generator settings)
-- One-to-One (available but, requires slight modification to the script - change window generator settings)
+- **Many-to-Many** (fully available)
+- **Many-to-One** (available as an example (commented out for user's convenience) at the end of the script - tested and confirmed to be working)
+- **One-to-Many** (available but, requires slight modification to the script - change window generator settings)
+- **One-to-One** (available but, requires slight modification to the script - change window generator settings)
 
 ##
 **Deep Learning Models (RNN variations) & Machine Learning Models (ANN) for Simultanously Forecasting Multiphase (Oil/Gas/Water) Production Time Series:**
-- LSTM
-- GRU
-- Bi-directional LSTM
-- Bi-directional GRU
-- ANN (Multi Layer Perceptron)
-- Linear Regression (with shallow ANN)
+- **LSTM**
+- **GRU**
+- **Bi-directional LSTM**
+- **Bi-directional GRU**
+- **Deep-ANN** (Multi Layer Perceptron with a non-linear activation function)
+- **Linear Regression** (with single layer ANN using a linear activation function)
 
 ##
 **Additional Content:**
-- Training tensorflow models (The models mentioned)
-- Saving/ Loading the tensorflow models
-- Displaying/Visualizing & Saving Plots of Multiphase Time Series Forecasts
-- Recognizing Loaded Models
-- Creating & Modfiying Models
-    - A Flexible Function that allows creating user desired layers, units,  model type (uni-directional vs. bi-directional), etc.
-- Optimizing Models with Optuna using the "Flexible Function" (Tree Parzen Estimator - TPE)
-- Saving/Loading Predictions/Results (pickles)
-- Creating Custom Loss Functions
-- Saving/Loading Custom Loss Results
+- Creation of Tensor datasets.
+    - Allows faster training but, some information loss is possible - requires checking the model accuracy after training to ensure reasonable loss of accuracy vs. training speed gain.
+- Different normalization methods for time series (z-score & min-max normalization)
+    - In this case, the normalization was instance based and each producing well was normalized using its own individual statistics.
+    - In this project, min-max normalization with a Dense sigmoid activation as the final layer of each model was used to predict the outcomes to avoid negative predictions after de-normalization (transforming the normalized values to its original scale).
+    - In this case, the reason behind using instance based min-max normalization with a final Dense layer using the sigmoid activation was because the behavior of producing wells (declining behavior) was predictable & the possible maximum and minimum values of production were known.
+        - It was assumed that the maximmum value within an individual oil & gas well was already observed within 6 months of production and the mimimum production possible was "~0".
+        - The min-max normalization scheme transformed the target outputs within the 0-1 range and the sigmoid activation function was used to guess a the range of target outputs that lie between 0-1.
+        - The same strategy may not work for problems in different domains and it is recommended to consider the problem domain when normalizing the dataset and creating the model.
+- Training Tensorflow models (The models mentioned in the contents).
+- Saving/ Loading the Tensorflow models.
+- Displaying/Visualizing & Saving Plots of Multiphase Time Series Forecasts.
+- Recognizing Loaded Models (recognizes the type of model by checking layer types, etc.).
+- Creating & Modfiying Models.
+    - A flexible function that allows creating desired layers, units,  model type (uni-directional vs. bi-directional), etc.
+    - Additional benefits: convenient for users & necessary for running Optuna trials.
+- Optimizing Models with Optuna using the "Flexible Function" (Tree Parzen Estimator - TPE).
+- Saving/Loading Predictions/Results (as pickle).
+- Creating custom loss functions (can be modified).
+- Saving/Loading custom loss results (useful for checking/re-checking a previously trained model's performance without re-running model predictions).
 
 ##
 **Citation:**
