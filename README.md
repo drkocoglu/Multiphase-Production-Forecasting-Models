@@ -5,7 +5,7 @@ The contents of the scripts provided in this repository can be modified to achie
 
 ##
 **Environment**
-- **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environments.ymla"** was necessary for successfully running this script without any errors/issues. Using different versions of these libraries may lead to errors when running this script.
+- **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environments.ymla"** was necessary for successfully running this script without running into any errors/issues. Using different versions of these libraries may lead to errors when running this script.
 
 - The provided scripts were tested with **Tensorflow 2.10 (Windows 11)**.
     - This is the latest Tensorflow version that supports training tensorflow models & predicting with the trained models on GPU in Windows.
