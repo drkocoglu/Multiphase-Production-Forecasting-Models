@@ -9,9 +9,9 @@ The contents of the scripts provided in this repository can be modified to achie
 
 - The provided scripts were tested with **Tensorflow 2.10 (Windows 11)**.
     - This is the latest Tensorflow version that supports training tensorflow models & predicting with the trained models on GPU in Windows.
-- This environment was created & managed inside Anaconda but, you can create virtual python environments or find other ways to recreate the same environment (at your own risk).  
+- This environment was created & managed inside **Anaconda** but, you can create virtual python environments or find other ways to recreate the same environment (**at your own risk**).  
 - Before creating the environment, you may want to check your GPU type & download the matching  python, compiler, & CUDA versions.
-    - https://www.tensorflow.org/install/source_windows (For Windows Builds)
+    - https://www.tensorflow.org/install/source_windows (**For Windows Builds**)
 ![image](https://github.com/user-attachments/assets/70eedab5-bdee-4ba8-a7a5-8b3e73441a2c)
 - You can use the provided the documents to rebuild the same (working) environment:
     - **"environments.ymla"**
