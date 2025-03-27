@@ -4,7 +4,7 @@ This repository is for educational purposes only. The script provides a flexible
 The contents of the scripts provided in this repository can be modified to achieve your own personal goals.
 
 ##
-**Environment**
+**<ins>Environment</ins>:**
 - **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environment.yml"** was necessary for successfully running this script without running into any errors/issues. Using different versions of these libraries may lead to errors when running this script.
 
 - The provided scripts were tested with **Tensorflow 2.10 (Windows 11)**.
