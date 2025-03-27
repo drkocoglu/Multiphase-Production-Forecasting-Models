@@ -54,7 +54,7 @@ The contents of the scripts provided in this repository can be modified to achie
     - **Days on production per month** feature was used to predict the future production.
     - In this case, these features could help the model accurately predict surges in production after long periods of shut-in (due to reservoir pressure build-up).
     - If additional features (e.g., pressure information) existed (it did not exist in our case), it is possbile to train a more accurate model.
-    - Unfortunately, during my research, I found limited resources on creating more accurate forecasting models and none of them were useful in creating accurate multiphase production time series forecasts for oil & gas. It is highly recommended to use the domain knowledge (feature engineering) to build more accurate models.
+    - Unfortunately, during my research, I found limited resources on creating more accurate forecasting models and none of them were useful in creating accurate multiphase production time series forecasts for oil & gas. It is highly recommended to use the domain knowledge (feature engineering) to build more accurate models for your own problem (if it is different than this problem).
 - Capability to create models for long term forecasts.
     - Although this is an example of short term forecasts, it can be used as a base for creating models capable of accurate long term forecasting.
     - Accurate long term forecasting requires models capable of predicting long term dependencies (shameless self promotion here - but, a useful read to understand long term dependencies: https://library.seg.org/doi/abs/10.15530/urtec-2022-3721904).
