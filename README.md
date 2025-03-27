@@ -15,7 +15,7 @@ Deep Learning Models (RNN variations) for Forecasting Multiphase (Oil/Gas/Water)
 ##
 **Citation:**
 
-If this repository contributed to your work please consider citing the associated paper
+If this repository contributed to your work please consider citing the associated paper:
 
 ##
     
