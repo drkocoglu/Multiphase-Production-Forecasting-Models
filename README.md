@@ -5,18 +5,20 @@ The contents of the scripts provided in this repository can be modified to achie
 
 ##
 **Environment**
-- Warning: The numpy, matplotlib, and pandas libraries (versions) provided in the "environments.ymla" was necessary for successfully running the script without any issues. Using a different version may cause issues with running this script.
-- 
-- The provided scripts were tested with Tensorflow 2.10 (Windows 11)
+- **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environments.ymla"** was necessary for successfully running this script without any errors/issues. Using different versions of these libraries may lead to errors when running this script.
+
+- The provided scripts were tested with **Tensorflow 2.10 (Windows 11)**.
     - This is the latest Tensorflow version that supports training tensorflow models & predicting with the trained models on GPU in Windows.
-    - If you have a Linux environment, you can still run this script. However, certain updates to the latter versions of Tensorflow can cause the script to run into issues.
-        - These problems are generally fixable with slight adjustments to the script but, it can be time consuming to implement the necessary fixes. 
+    - If you have a Linux environment, you can still run this script.
+    - However, updates to the different versions of Tensorflow ( Tensorflow v. > 2.10 or Tensorflow v. < 2.10) can cause the script to run into issues (since it was written with Tensorflow 2.10 functions). However, this hypothesis was not tested and you are free to try different versions of Tensorflow at your own risk.
 - This environment was created & managed inside Anaconda but, you can create virtual python environments or find other ways to recreate the same environment (at your own risk).  
 - You need to check your GPU type (NVidia RTX 3060,4060, etc.) & download the matching  python, compiler, & CUDA versions.
     - https://www.tensorflow.org/install/source_windows (For Windows Builds)
     - https://www.tensorflow.org/install/source (For Linux Builds)
 ![image](https://github.com/user-attachments/assets/70eedab5-bdee-4ba8-a7a5-8b3e73441a2c)
-- You can use the provided "environments.ymla" and "Environment_Build.txt" to rebuild the same environment that was used in this project.
+- You can use the provided the documents to rebuild the same (working) environment or at least know which versions of which python libraries were used to build this project:
+    - **"environments.ymla"**
+    - **"Environment_Build.txt"** 
 
 ##
 **Contents:**
