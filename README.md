@@ -2,8 +2,9 @@
 
 This repository is for educational purposes only. 
 
-**Contents:** 
 ##
+**Contents:** 
+
 Deep Learning Models (RNN variations) for Forecasting Multiphase (Oil/Gas/Water) Production Time Series.
 - LSTM
 - GRU
@@ -11,7 +12,7 @@ Deep Learning Models (RNN variations) for Forecasting Multiphase (Oil/Gas/Water)
 - Bi-directional GRU
 - ANN (Multi-Layer Perceptron)
 
-
+##
 **Citation:**
 
 If this repository contributed to your work please consider citing the associated paper
