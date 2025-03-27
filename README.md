@@ -11,7 +11,8 @@ Deep Learning Models (RNN variations) for Forecasting Multiphase (Oil/Gas/Water)
 - ANN (Multi-Layer Perceptron)
 
 
-**Citation**
+**Citation:**
+
 If this repository contributed to your work please consider citing the associated paper
 
 ##
