@@ -46,10 +46,20 @@ The contents of the scripts provided in this repository can be modified to achie
     - In this case, the normalization was instance based and each producing well was normalized using its own individual statistics.
     - In this project, min-max normalization with a Dense sigmoid activation as the final layer of each model was used to predict the outcomes to avoid negative predictions after de-normalization (transforming the normalized predictions to its original scale).
     - In this case, the reason behind using instance based min-max normalization with a final Dense layer (using the sigmoid activation function) was because the behavior of producing wells (declining behavior) was predictable & the possible maximum and minimum values of production were known.
-        - It was assumed that the maximmum value within an individual oil & gas well was already observed within 6 months of production and the mimimum production possible was "~0".
+        - It was assumed that the maximmum value within an individual oil & gas well was already observed within 6 months of production and the mimimum possbile production was "~0".
         - The min-max normalization scheme transformed the target outputs within the 0-1 range and the sigmoid activation function was used to guess a the range of target outputs that lie between 0-1.
         - The same strategy may not work for problems in different domains and it is recommended to consider the problem domain when normalizing the dataset and creating the model.
 - Training Tensorflow models (The models mentioned in the contents).
+- Effective use of shut-in features.
+    - **Days on production per month** feature was used to predict the future production.
+    - In this case, these features could help the model accurately predict surges in production after long periods of shut-in (due to reservoir pressure build-up).
+    - If additional features (e.g., pressure information) existed (it did not exist in our case), it is likely possbile to train a more accurate model.
+    - Unfortunately, during my research, I found limited resources on creating more accurate forecasting models and none of them were useful in creating accurate multiphase production time series forecasts. It is highly recommended to use the domain knowledge (feature engineering) to build more accurate models.
+- Capability to create models for long term forecasts.
+    - Although this is an example of short term forecasts, it can be used as a base for creating models capable of accurate long term forecasting.
+    - Accurate long term forecasting requires models capable of predicting long term dependencies (shameless self promotion here - but, a useful read to understand long term dependencies: https://library.seg.org/doi/abs/10.15530/urtec-2022-3721904).
+    - Many RNNs, including gated RNNs can forget previous inputs during processing/training if the sequence is too long which may negatively impact model training (suboptimal training).
+    - The gated version exist to help remember longer sequences (better than not having this option), however there are no guarantees that the model will remember the whole sequence especially if the sequence is long enough.  
 - Saving/ Loading the Tensorflow models.
 - Displaying/Visualizing & Saving Plots of Multiphase Time Series Forecasts.
 - Recognizing Loaded Models (recognizes the type of model by checking layer types, etc.).
