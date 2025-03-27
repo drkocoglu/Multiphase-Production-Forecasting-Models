@@ -1,4 +1,4 @@
-# Multiphase-Production-Forecasting-Models
+# Multiphase Production Forecasting Models
 
 This repository is for educational purposes only. The script provides a flexible method to create **Multiphase Time Series Forecasting** models with multiple RNN variations. 
 The contents of the scripts provided in this repository can be modified to achieve your own personal goals.
