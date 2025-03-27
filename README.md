@@ -1,6 +1,14 @@
 # Multiphase-Production-Forecasting-Models
 
-- Deep Learning Models for Forecasting Multiphase Production Time Series Data.
+This repository is for educational purposes only. 
+
+**Contents:** 
+Deep Learning Models (RNN variations) for Forecasting Multiphase (Oil/Gas/Water) Production Time Series.
+- LSTM
+- GRU
+- Bi-directional LSTM
+- Bi-directional GRU
+- ANN (Multi-Layer Perceptron)
 
 
 **Citation**
