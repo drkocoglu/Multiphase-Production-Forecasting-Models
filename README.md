@@ -22,6 +22,13 @@ The contents of the scripts provided in this repository can be modified to achie
 ##
 **Contents:**
 
+## 
+**Toy Dataset**
+- Example_Data.xlsx - includes a toy dataset of 100 wells (modified for keeping the data confidential).
+    - 50 wells producing from Bakken.
+    - 50 wells producing from Three-Forks formation.
+    - Production history with oil, gas, and water per well.     
+
 ##
 **Data Pre-processing for Time Series based Forecasting (RNN variations):**
 - **Many-to-Many** (fully available)
