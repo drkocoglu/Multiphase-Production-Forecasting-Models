@@ -45,7 +45,7 @@ The contents of the scripts provided in this repository can be modified to achie
 - Different normalization methods for time series (z-score & min-max normalization)
     - In this case, the normalization was instance based and each producing well was normalized using its own individual statistics.
     - In this project, min-max normalization with a Dense sigmoid activation as the final layer of each model was used to predict the outcomes to avoid negative predictions after de-normalization (transforming the normalized predictions to its original scale).
-    - In this case, the reason behind using instance based min-max normalization with a final Dense layer using the sigmoid activation was because the behavior of producing wells (declining behavior) was predictable & the possible maximum and minimum values of production were known.
+    - In this case, the reason behind using instance based min-max normalization with a final Dense layer (using the sigmoid activation function) was because the behavior of producing wells (declining behavior) was predictable & the possible maximum and minimum values of production were known.
         - It was assumed that the maximmum value within an individual oil & gas well was already observed within 6 months of production and the mimimum production possible was "~0".
         - The min-max normalization scheme transformed the target outputs within the 0-1 range and the sigmoid activation function was used to guess a the range of target outputs that lie between 0-1.
         - The same strategy may not work for problems in different domains and it is recommended to consider the problem domain when normalizing the dataset and creating the model.
