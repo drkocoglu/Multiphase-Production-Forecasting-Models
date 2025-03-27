@@ -25,7 +25,7 @@ The contents of the scripts provided in this repository can be modified to achie
 ##
 **Data Pre-processing for Time Series based Forecasting (RNN variations):**
 - **Many-to-Many** (fully available)
-- **Many-to-One** (available as an example (commented out for user's convenience) at the end of the script - tested and confirmed to be working)
+- **Many-to-One** (available as an example at the end of the script but, commented out for user's convenience - tested and confirmed to be working)
 - **One-to-Many** (available but, requires slight modification to the script - change window generator settings)
 - **One-to-One** (available but, requires slight modification to the script - change window generator settings)
 
