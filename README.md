@@ -20,7 +20,7 @@ The contents of the scripts provided in this repository can be modified to achie
     - **"Environment_Build.txt"** 
 
 ##
-<b><u>Contents:</u></b>
+**<ins>Contents:</ins>**
 
 ## 
 **Toy Dataset**
