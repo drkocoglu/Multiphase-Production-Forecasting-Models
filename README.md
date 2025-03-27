@@ -28,16 +28,17 @@ The contents of the scripts provided in this repository can be modified to achie
 - One-to-One (available but, requires slight modification to the script - change window generator settings)
 
 ##
-**Deep Learning Models (RNN variations & ANN) for Forecasting Multiphase (Oil/Gas/Water) Production Time Series:**
+**Deep Learning Models (RNN variations) & Machine Learning Models (ANN) for Simultanously Forecasting Multiphase (Oil/Gas/Water) Production Time Series:**
 - LSTM
 - GRU
 - Bi-directional LSTM
 - Bi-directional GRU
 - ANN (Multi Layer Perceptron)
+- Linear Regression (with shallow ANN)
 
 ##
 **Additional Content:**
-- Training tensorflow models (The RNN variations previously mentioned)
+- Training tensorflow models (The models mentioned)
 - Saving/ Loading the tensorflow models
 - Displaying/Visualizing & Saving Plots of Multiphase Time Series Forecasts
 - Recognizing Loaded Models
