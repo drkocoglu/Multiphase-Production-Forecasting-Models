@@ -28,7 +28,13 @@ The contents of the scripts provided in this repository can be modified to achie
     - 50 wells producing from Bakken.
     - 50 wells producing from Three-Forks formation.
     - Production history with oil, gas, and water per well.     
+##
+**utils.py.ipynb**
+- Includes all the necessary functions and GPU checks (checks whether the system recognizes your GPU or not - if the system recognizes the GPU, it should print the GPU name (e.g. NVIDIA RTX 4060).
 
+##
+**train_n_save_model.py.ipynb**
+- Includes the application: training and evaluating models & more (check additional contents for full details).
 ##
 **Data Pre-processing for Time Series based Forecasting (RNN variations):**
 - **Many-to-Many** (fully available)
