@@ -5,7 +5,7 @@ The contents of the scripts provided in this repository can be modified to achie
 
 ##
 **Environment**
-- **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environments.ymla"** was necessary for successfully running this script without running into any errors/issues. Using different versions of these libraries may lead to errors when running this script.
+- **Warning:** The numpy, matplotlib, and pandas versions provided in the **"environment.yml"** was necessary for successfully running this script without running into any errors/issues. Using different versions of these libraries may lead to errors when running this script.
 
 - The provided scripts were tested with **Tensorflow 2.10 (Windows 11)**.
     - Tensorflow 2.10 is the latest version that supports training tensorflow models on a GPU instead of a CPU in Windows.
@@ -16,7 +16,7 @@ The contents of the scripts provided in this repository can be modified to achie
     - https://www.tensorflow.org/install/source_windows (**For Windows Builds**)
 ![image](https://github.com/user-attachments/assets/70eedab5-bdee-4ba8-a7a5-8b3e73441a2c)
 - You can use the provided the documents to rebuild the same (**working**) environment:
-    - **"environments.ymla"**
+    - **"environment.yml"**
     - **"Environment_Build.txt"** 
 
 ##
