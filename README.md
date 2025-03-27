@@ -21,13 +21,14 @@ This repository is for educational purposes only. The script provides a flexible
 - ANN (Multi Layer Perceptron)
 
 ##
-**What else is availabe?:**
-- Training tensorflow models (The RNN variations mentioned above)
-- Saving/ Loading tensorflow models
+**Additional Content:**
+- Training tensorflow models (The RNN variations previously mentioned)
+- Saving/ Loading the tensorflow models
 - Displaying/Visualizing & Saving Plots of Multiphase Time Series Forecasts
 - Recognizing Loaded Models
-- Creating & Modfiying Models (Flexible Function - allows creating desired layers, type (uni-directional or bi-directional), units, etc. with simple user prompts)
-- Optimizing Models with Optuna using the Flexible Model Creation Function (Tree Parzen Estimator - TPE)
+- Creating & Modfiying Models
+    - A Flexible Function that allows creating user desired layers, units,  model type (uni-directional vs. bi-directional), etc.
+- Optimizing Models with Optuna using the "Flexible Function" (Tree Parzen Estimator - TPE)
 - Saving/Loading Predictions/Results (pickles)
 - Creating Custom Loss Functions
 - Saving/Loading Custom Loss Results
