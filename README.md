@@ -35,6 +35,7 @@ The contents of the scripts provided in this repository can be modified to achie
 ##
 **train_n_save_model.py.ipynb**
 - Includes the application: training and evaluating models & more (check additional contents for full details).
+
 ##
 **Data Pre-processing for Time Series based Forecasting (RNN variations):**
 - **Many-to-Many** (fully available)
