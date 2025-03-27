@@ -4,20 +4,20 @@ This repository is for educational purposes only. The script provides a flexible
 
 ##
 **Contents:** 
-* Data Pre-processing for Time Series based Forecasting (RNN variations):*
+** Data Pre-processing for Time Series based Forecasting (RNN variations):**
 - Many-to-Many (fully available)
 - Many-to-One (available as an example at the end of the script)
 - One-to-Many (available but, requires slight modification to the script - change window generator settings)
 - One-to-One (available but, requires slight modification to the script - change window generator settings)
 
-* Deep Learning Models (RNN variations & ANN) for Forecasting Multiphase (Oil/Gas/Water) Production Time Series:*
+** Deep Learning Models (RNN variations & ANN) for Forecasting Multiphase (Oil/Gas/Water) Production Time Series:**
 - LSTM
 - GRU
 - Bi-directional LSTM
 - Bi-directional GRU
 - ANN (Multi Layer Perceptron)
 
-* What else is availabe?:*
+** What else is availabe?:**
 - Training tensorflow models (The RNN variations mentioned above)
 - Saving/ Loading tensorflow models
 - Displaying/Visualizing & Saving Plots of Multiphase Time Series Forecasts
